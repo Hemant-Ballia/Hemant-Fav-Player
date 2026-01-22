@@ -14,7 +14,7 @@ const allSongs = [
     artist: "Arijit Singh",
     duration: "4:22",
     // NOTE: Replace the link below with your actual file name like "dil_sambhal.mp3" if you have it
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/hello-world.mp3",
+ src="https://www.youtube.com/embed/r_3zVIyblLQ?si=7XJSi5MaBTqF83EW" ,
   },
   {
     id: 1,
