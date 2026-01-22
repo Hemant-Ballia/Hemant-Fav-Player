@@ -6,30 +6,29 @@ const previousButton = document.getElementById("previous");
 const playingSong = document.getElementById("player-song-title");
 const songArtist = document.getElementById("player-song-artist");
 
-// --- SONGS LIST (HEMANT FAV) ---
-// Note: You must add the actual .mp3 files to a 'songs' folder in your project
 const allSongs = [
   // --- Arijit Singh Hits ---
   {
     id: 0,
-    title: "Dil sambhal ja",
+    title: "Dil Sambhal Ja",
     artist: "Arijit Singh",
     duration: "4:22",
-   src="https://www.youtube.com/embed/r_3zVIyblLQ?si=7XJSi5MaBTqF83EW" , // Make sure file exists in songs folder
+    // NOTE: Replace the link below with your actual file name like "dil_sambhal.mp3" if you have it
+    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/hello-world.mp3",
   },
   {
     id: 1,
     title: "Channa Mereya",
     artist: "Arijit Singh",
     duration: "4:49",
-    src: "songs/channa_mereya.mp3",
+    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/in-the-zone.mp3",
   },
   {
     id: 2,
     title: "Kesariya",
     artist: "Arijit Singh",
     duration: "4:28",
-    src: "songs/kesariya.mp3",
+    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/camper-cat.mp3",
   },
   
   // --- Romantic Songs ---
@@ -38,14 +37,14 @@ const allSongs = [
     title: "Raataan Lambiyan",
     artist: "Jubin Nautiyal",
     duration: "3:50",
-    src: "songs/raataan_lambiyan.mp3",
+    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/electronic.mp3",
   },
   {
     id: 4,
     title: "Pehli Nazar Mein",
     artist: "Atif Aslam",
     duration: "5:12",
-    src: "songs/pehli_nazar.mp3",
+    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3",
   },
 
   // --- Bhakti (Devotional) ---
@@ -54,14 +53,14 @@ const allSongs = [
     title: "Hanuman Chalisa",
     artist: "Hariharan",
     duration: "9:45",
-    src: "songs/hanuman_chalisa.mp3",
+    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/hello-world.mp3",
   },
   {
     id: 6,
     title: "Achyutam Keshavam",
     artist: "Vikram Hazra",
     duration: "5:30",
-    src: "songs/achyutam.mp3",
+    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/in-the-zone.mp3",
   },
 
   // --- Sadabahar (Evergreen) ---
@@ -70,17 +69,17 @@ const allSongs = [
     title: "Lag Jaa Gale",
     artist: "Lata Mangeshkar",
     duration: "4:17",
-    src: "songs/lag_jaa_gale.mp3",
+    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/camper-cat.mp3",
   },
   {
     id: 8,
-    title: "Non- stop",
-    artist: "Imran Hasmin",
+    title: "Non-stop",
+    artist: "Imran Hashmi",
     duration: "4:30",
-    src="https://www.youtube.com/embed/EWZqulvXnZQ?si=HMB3CPPzTlj41E0u" ,
+    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/electronic.mp3",
   },
   
-  // --- Demo Song (Working Example) ---
+  // --- Demo ---
   {
     id: 9,
     title: "Hello World (Demo)",
