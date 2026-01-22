@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hemant Fav Music Player</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <title>
+    Build a Music Player App
+  </title>
 </head>
+
 <body>
   <div class="container">
     <div class="player">
@@ -16,7 +20,7 @@
           <div></div>
           <div></div>
         </div>
-        <h1 class="fcc-title">Hemant Fav</h1>
+        <h1 class="fcc-title">Hemant-Fav</h1>
         <div class="parallel-lines">
           <div></div>
           <div></div>
@@ -24,7 +28,8 @@
       </div>
       <div class="player-content">
         <div id="player-album-art">
-          <img src="https://cdn.freecodecamp.org/curriculum/js-music-player/digital-drift.jpg" alt="song cover art" />
+          <img src="https://cdn.freecodecamp.org/curriculum/js-music-player/digital-drift.jpg"
+            alt="song cover art" />
         </div>
         <div class="player-display">
           <div class="player-display-song-artist">
@@ -59,24 +64,62 @@
         </div>
       </div>
     </div>
-    
-    <div id="youtube-player" style="position: absolute; width: 0; height: 0; opacity: 0; pointer-events: none;"></div>
-
     <div class="playlist">
       <div class="playlist-bar">
         <div class="parallel-lines">
           <div></div>
           <div></div>
         </div>
-        <h2 class="playlist-title" id="playlist">My Playlist</h2>
+        <h2 class="playlist-title" id="playlist">Playlist</h2>
         <div class="parallel-lines">
           <div></div>
           <div></div>
         </div>
       </div>
-      <ul id="playlist-songs"></ul>
+      <ul id="playlist-songs">
+        <li id="song-0" class="playlist-song">
+          <button class="playlist-song-info" >
+            <span class="playlist-song-title">Hello World</span>
+            <span class="playlist-song-artist">Rafael</span>
+            <span class="playlist-song-duration">0:23</span>
+          </button>
+        </li>
+
+        <li id="song-1" class="playlist-song">
+          <button class="playlist-song-info" >
+            <span class="playlist-song-title">In the Zone</span>
+            <span class="playlist-song-artist">Rafael</span>
+            <span class="playlist-song-duration">0:11</span>
+          </button>
+        </li>
+
+        <li id="song-2" class="playlist-song">
+          <button class="playlist-song-info" >
+            <span class="playlist-song-title">Camper Cat</span>
+            <span class="playlist-song-artist">Rafael</span>
+            <span class="playlist-song-duration">0:21</span>
+          </button>
+        </li>
+
+        <li id="song-3" class="playlist-song">
+          <button class="playlist-song-info" >
+            <span class="playlist-song-title">Electronic</span>
+            <span class="playlist-song-artist">Rafael</span>
+            <span class="playlist-song-duration">0:15</span>
+          </button>
+        </li>
+
+        <li id="song-4" class="playlist-song">
+          <button class="playlist-song-info" >
+            <span class="playlist-song-title">Sailing Away</span>
+            <span class="playlist-song-artist">Rafael</span>
+            <span class="playlist-song-duration">0:22</span>
+          </button>
+        </li>
+      </ul>
     </div>
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>
